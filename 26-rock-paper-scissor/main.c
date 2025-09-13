@@ -10,20 +10,20 @@ int main() {
 
     srand(time(NULL));
 
-    printf("*** Rock Paper Scissors ***\n\n");
+    printf("*** Rock Paper Scissors ***\n");
 
     int computerChoice = getComputerChoice();
     int userChoice = getUserChoice();
 
     switch (userChoice) {
         case 1:
-            printf("You choose ROCK!\n");
+            printf("\nYou choose ROCK!\n");
             break;
         case 2:
-            printf("You choose PAPER!\n");
+            printf("\nYou choose PAPER!\n");
             break;
         case 3:
-            printf("You choose SCISSOR!\n");
+            printf("\nYou choose SCISSOR!\n");
             break;
     }
 
@@ -53,7 +53,7 @@ int getUserChoice() {
     int choice = 0;
     
     do {
-        printf("Choose an option\n");
+        printf("\nChoose an option\n");
         printf("1. ROCK\n2. PAPER\n3. SCISSOR\n");
         printf("Enter your choice : ");
         scanf("%d", &choice);
