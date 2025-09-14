@@ -12,6 +12,19 @@ int main() {
         printf("%d ", numbers[i]);
     }
 
+    int scores[5] = {0};
+    
+    printf("\n\n");
+
+    for (int i = 0; i < sizeof(scores)/sizeof(scores[0]); i++) {
+        printf("Enter a score %d : ", i+1);
+        scanf("%d", &scores[i]);
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", scores[i]);
+    }
+    
     printf("\n");
 
     return 0;
